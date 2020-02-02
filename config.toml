@@ -1,3 +1,39 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Watch This Space Improv"
+theme = "quadra"
+
+rssLimit = 15
+
+[params]
+  title       = "Cornis"
+  subtitle    = ""
+  cover       = ""
+  description = ""
+  metaDescription = ""
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 0
+[[menu.main]]
+  name = "Events"
+  url = "/events"
+  weight = 1
+[[menu.main]]
+  name = "Classes"
+  url = "/classes"
+  weight = 2
+[[menu.main]]
+  name = "Resources"
+  url = "/resources"
+  weight = 3
+[[menu.main]]
+  name = "About us"
+  url = "/about"
+  weight = 4
+[[menu.main]]
+  name = "Contact"
+  url = "/contact"
+  weight = 5
+

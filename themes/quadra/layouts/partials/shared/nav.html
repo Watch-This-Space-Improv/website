@@ -1,0 +1,47 @@
+    <!-- NAVIGATION - Select nav color and offset -->
+    <nav id="navigation" class="jump dark-nav modern hover" data-offset="55">
+        <!-- Columns -->
+        <div class="columns clearfix px-30">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#home">
+                    <img src="/images/logo_blackbg.png" data-second-logo="/images/logo_blackbg.png" alt="WTS Logo">
+                </a>
+            </div>
+            <!-- Right Elements; Nav Button, Language Button, Search .etc -->
+            <div class="nav-elements">
+
+                <ul class="clearfix nav no-ls normal">
+                    <!-- Search Button -->
+                    <li><a href="#" class="search-form-trigger"><i class="fa fa-search"></i></a></li>
+                </ul>
+            </div>
+            <!-- End Navigation Elements -->
+
+            <!-- Navigation Menu -->
+            <div class="nav-menu">
+                <!-- Navigation Content -->
+                <ul class="nav clearfix uppercase no-ls normal">
+                    {{with .Site.Menus.main}}
+                        {{ range sort . "Weight" "asc"}}
+                            <li><a href="{{.URL}}" class="nav-link">{{.Name}}</a></li>
+                        {{end}}
+                    {{end}}
+                </ul>
+            </div>
+            <!-- End Navigation Menu -->
+        </div>
+        <!-- End Columns -->
+    </nav>
+    <!-- END NAVIGATION -->
+
+    <!-- DOTTED NAVIGATION -->
+    <section id="dotted-navigation" class="hide-on-home nav-menu">
+        <ul id="side-dotted-navigation" class="nav spy font-11 bold uppercase">
+                    {{with .Site.Menus.main}}
+                        {{ range sort . "Weight" "asc"}}
+                            <li><a href="{{.URL}}"><span>{{.Name}}</span></a></li>
+                        {{end}}
+                    {{end}}        </ul>
+    </section>
+    <!-- END DOTTED NAVIGATION -->

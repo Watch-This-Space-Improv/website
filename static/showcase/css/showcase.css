@@ -1,0 +1,217 @@
+
+/* Showcase Demo Styles
+================================================== */
+
+	/* Page Fonts */
+	@import url('https://fonts.googleapis.com/css?family=Anton|Open+Sans:300,400,700|Playfair+Display:400,700i');
+	/* Body Options */
+	body{ font-family: 'Open Sans', sans-serif; font-weight: 400; letter-spacing: -0.5px; }
+
+/* COLORS
+================================================== */
+
+	/* Colored */
+	.colored, .colored-hover:hover{ color:#243cad !important; }
+	.bg-colored, .bg-colored-hover:hover{ background-color:#243cad !important; }
+	.border-colored, .border-colored-hover:hover{ border-color:#243cad !important; }
+
+	/* Colored1 */
+	.colored1, .colored1-hover:hover{ color:#fff66b !important; }
+	.bg-colored1, .bg-colored1-hover:hover{ background-color:#fff66b !important; }
+	.border-colored1, .border-colored1-hover:hover{ border-color:#fff66b !important; }
+
+	/* Colored2 */
+	.colored2, .colored2-hover:hover{ color:#2e354a !important; }
+	.bg-colored2, .bg-colored2-hover:hover{ background-color:#2e354a !important; }
+	.border-colored2, .border-colored2-hover:hover{ border-color:#2e354a !important; }
+
+	.bg-soft-colored:before{background-color:rgba(44,48,63,0.9);}
+
+	::selection{ background-color:#2f3135; color:White; }
+
+	/* Other Colors */
+	.qdr-hover:before{background-color:#243cad;}
+	.qdr-hover-5:before{background-color:#fff;}
+	.qdr-hover:after{background-color:#222;}
+	.qdr-hover-2-rotate:before{ background-color:#222; }
+
+	.bg-gradient{
+		background: #223aaa; /* Old browsers */
+		background: -moz-linear-gradient(45deg,  #223aaa 0%, #4664f0 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(45deg,  #223aaa 0%,#4664f0 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to 45deg,  #223aaa 0%,#4664f0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	}
+	.bg-gradient1{
+		background: #327ffe;
+		background: -moz-linear-gradient(45deg, #754ef4 0%, #327ffe 50%, #21cae9 100%);
+		background: -webkit-linear-gradient(45deg, #754ef4 0%,#327ffe 50%,#21cae9 100%);
+		background: linear-gradient(45deg, #754ef4 0%,#327ffe 50%,#21cae9 100%);
+	}
+	}
+	.bg-gradient2{
+		background: #d2d1d7; /* Old browsers */
+		background: -moz-linear-gradient(45deg,  #d2d1d7 0%, #fff 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(45deg,  #d2d1d7 0%,#fff 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to 45deg,  #d2d1d7 0%,#fff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	}
+	.bg-soft-gradient:before{
+		opacity: 0.93;
+		background: #223aaa; /* Old browsers */
+		background: -moz-linear-gradient(45deg,  #223aaa 0%, #4664f0 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(45deg,  #223aaa 0%,#4664f0 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to 45deg,  #223aaa 0%,#4664f0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	}
+	.bg-soft-gradient1:before{
+		opacity: 0.9;
+		background: #327ffe;
+		background: -moz-linear-gradient(45deg, #754ef4 0%, #327ffe 50%, #21cae9 100%);
+		background: -webkit-linear-gradient(45deg, #754ef4 0%,#327ffe 50%,#21cae9 100%);
+		background: linear-gradient(45deg, #754ef4 0%,#327ffe 50%,#21cae9 100%);
+	}
+	.bg-soft-gradient2:before{
+		opacity: 0.9;
+		background: #1b1b1c; /* Old browsers */
+		background: -moz-linear-gradient(45deg,  #1b1b1c 0%, #2e2f32 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(45deg,  #1b1b1c 0%,#2e2f32 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to 45deg,  #1b1b1c 0%,#2e2f32 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	}
+
+
+    #navigation a:hover, #navigation li > a.active{
+    	color: #243cad !important;
+    }
+
+
+/* MODERN NAVIGATION */
+	/* Navigation styles - You can see navigation hover and active colors in the content/showcase/css/style.css file. */
+	#navigation.modern .columns ul li a,
+	#navigation.modern .columns ul li button{ font-size:11px; font-weight: 600;}
+	/* Mega menu and dropdown styles */
+	#navigation.modern .columns ul.dropdown-menu.mega-menu li a{ font-family: 'Open Sans', sans-serif; color: #aaa; font-size: 12px; text-transform: capitalize; }
+	#navigation.modern .columns ul.dropdown-menu li a{ font-family: 'Open Sans', sans-serif; color: #aaa; font-size: 13px; letter-spacing: 0; font-weight: 400; }
+	/* Hovers */
+	#navigation.modern .columns ul.dropdown-menu.mega-menu li a:hover{color:white;}
+	#navigation.modern .columns ul.dropdown-menu li a:hover{ color:white; }
+
+
+/* GLOBAL OPTIONS FOR SHOWCASE */
+
+	/* Sections Fixed Option */
+	.section{ position: relative; overflow: hidden; width: 100%; height: auto; min-height: 100vh; }
+	.section .showcase_container{ clip: rect(0, auto, auto, 0); position: absolute; width: 100%; height: 100%; }
+	.section .section-texts{ position: fixed; color:white; top:50%; padding:0 5%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
+	/* Dark effect for sections - You can change the color and opacity */
+	.darkvision{background-color:black; opacity: 0.5; width: 100%; height: 100%; position: absolute; left:0; top:0; z-index: 1;}
+		@media only screen and (max-width: 991px){
+			.section .showcase_container{ position: relative; height: 100vh; }
+			.section .section-texts{ position: relative; }
+			.darkvision{ display: none !important; }
+		}
+
+	/* Page Titles */
+	.title{ text-transform: uppercase; font-family: 'Anton', sans-serif; font-size:65px; line-height: 71px; letter-spacing: 0px; margin:0; padding:0; text-shadow: 0px 1px 20px rgba(0,0,0,0.15) }
+	.subtitle{ font-size:18px; padding:0; margin: 0 0 7px;}
+	.striped-subtitle{ padding-left:80px; position: relative; }
+	.striped-subtitle:before{ display: block; position: absolute; content:''; left:0; width: 70px !important; height: 2px !important; background-color:white; top:50%; margin-top:-1px !important; }
+		/* Responsive Titles */
+		@media only screen and (max-width: 1200px){
+			.title{font-size:50px; line-height: 55px; }
+			.subtitle{ font-size:17px;}
+		}
+		@media only screen and (max-width: 769px){
+			.title{font-size:38px; line-height: 39px; }
+			.striped-subtitle{ padding-left:20px; }
+			.striped-subtitle:before{ width: 10px !important; }
+		}
+		@media only screen and (max-width: 481px){
+			.title{font-size:25px; line-height: 28px; }
+			.striped-subtitle,.subtitle{ font-size: 14px; }
+			.subtitle{ margin-bottom:0; }
+		}
+		@media only screen and (max-width: 361px){
+			.title{font-size:20px; line-height: 23px; }
+			.striped-subtitle,.subtitle{ padding-left:0; font-size: 13px; }
+			.striped-subtitle:before{ display: none; }
+		}
+	/* Title underline effect */
+	.section .text-link>*{ position: relative; display: inline-block; vertical-align: middle; }
+	.section .text-link>*:before{ width:0px; height: 1px; position: absolute; bottom:1px; left:0; content:''; background-color:#eee; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
+	.section .text-link:hover>*:before{ width: 100%; }
+
+
+/* Contents for about, second section */
+	.about .left-content,
+	.about .right-contents{ height: 100vh; padding: 0; }
+	.about .right-contents .content{ width: 100%; height: 50vh; padding: 90px 65px; overflow-x: hidden; overflow-y: auto; }
+		@media only screen and (max-width: 1400px){
+			.about .right-contents .content{ padding: 60px 35px; }
+		}
+		@media only screen and (max-width: 1150px){
+			.about .right-contents .content{ padding: 40px 25px; }
+		}
+		@media only screen and (max-width: 991px){
+			.about, .about .showcase_container{ height: auto; min-height: 100vh; }
+			.about .right-contents .content{ height: auto; }
+			.about .right-contents .content.video{ height: 60vh; min-height: auto; }
+			.about .right-contents{ height: auto; }
+		}
+
+/* Features */
+	.features{ padding:90px 0; height: auto !important; }
+	.features .slick-slider{ height: auto !important; }
+	.features .slick-list{ overflow: visible !important; }
+	.features .slick-slider .slick-slide,
+	.features .slick-slider .slick-clone{ overflow: visible; position: relative; opacity: .5; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; transition: all 0.5s; margin:0 40px;  }
+		@media only screen and (max-width: 991px){
+			.features .slick-slider .slick-slide,
+			.features .slick-slider .slick-clone{ margin:0 10px; }
+		}
+		@media only screen and (max-width: 481px){
+			.features .slick-list{ padding: 0 10px !important; }
+		}
+	/* Shadow Effect */
+	.features .slick-slider .slick-slide:before{ height: 100%; content:''; left:40px; right: 40px; bottom:-50px; height: 0%; position: absolute; border-radius: 60%; background-color:#000; z-index: -1; filter: blur(60px); opacity: 0; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; transition: all 2s; }
+	.features .slick-slider .slick-center{ opacity: 1; }
+	.features .slick-slider .slick-center:before{ opacity: 1 !important; height: 30%; }
+	/* Slide Texts */
+	.features .slick-slider .slide-texts{ position: absolute; bottom:0; padding:10px 20px; }
+	.features .slick-slider .slide-texts *{ letter-spacing: 0; }
+	.features .hero-slider, .hero-slider .slide{ overflow: visible; }
+	/* Border Radius */
+	.features .slick-slider .slick-slide,
+	.features .slick-slider .slick-slide img{ border-radius: 14px !important; }
+	.slick-slide{ height: auto; }
+	/* Next&Prev Arrows */
+	.features .slick-arrow{ width: 45px; height: 100px; position: absolute; right: 50%; margin-right: -100px; top:100%; margin-top:50px; color:#ccc; z-index: 5; padding: 0; background: transparent; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
+	.features .slick-arrow span{ width: 0px; height: 1px; background: #aaa; position: absolute; display: block; left:20px; opacity: 0; visibility: hidden; -webkit-transition: all 0.5s cubic-bezier(0.77, 0, 0.2, 1); -moz-transition: all 0.5s cubic-bezier(0.77, 0, 0.2, 1); transition: all 0.5s cubic-bezier(0.77, 0, 0.2, 1); }
+	.features .slick-arrow:before, .features .slick-arrow:after{ width: 18px; height: 1px; background: #aaa; content:''; position: absolute; left:10px; -webkit-transition: all 0.5s cubic-bezier(0.77, 0, 0.2, 1); -moz-transition: all 0.5s cubic-bezier(0.77, 0, 0.2, 1); transition: all 0.5s cubic-bezier(0.77, 0, 0.2, 1); }
+	/* Next rotate options */
+	.features .slick-arrow.slick-next:before{ margin-top:-6px; -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+	.features .slick-arrow.slick-next:after{ margin-top:6px; -ms-transform: rotate(-45deg); transform: rotate(-45deg); transform: rotate(-45deg); }
+	/* Reverse - Previous settings */
+	.features .slick-arrow.slick-prev{ left: 50%; margin-left: -100px; right: auto; margin-right: auto; }
+	.features .slick-arrow.slick-prev span{ left: auto; right: 20px; }
+	.features .slick-arrow.slick-prev:before, .features .slick-arrow.slick-prev:after{ left:auto; right:10px; }
+	.features .slick-arrow.slick-prev:before{ margin-top:6px; -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+	.features .slick-arrow.slick-prev:after{ margin-top:-6px; -ms-transform: rotate(-45deg); transform: rotate(-45deg); transform: rotate(-45deg); }
+	.features .slick-arrow:active{ -ms-transform: scale(0.9); -webkit-transform: scale(1.1); transform: scale(0.9); }
+	/* Hover for desktops */
+	@media only screen and (min-width: 640px){
+		.features .slick-arrow:hover{ background-color:rgba(0,0,0,0.17); }
+		.features .slick-arrow:hover span{ width: 50px; left:-15px; opacity: 1; visibility: visible; }
+		.features .slick-arrow:hover:before, .features .slick-arrow:hover:after{ left:23px; }
+		/* Hover to prev */
+		.features .slick-arrow.slick-prev:hover span{ left:auto; right:-15px; }
+		.features .slick-arrow.slick-prev:hover:before, .features .slick-arrow.slick-prev:hover:after{ left:auto; right:23px; }
+		/* Texts to arrows when mouse over */
+		.features .slick-arrow span:before{ position: absolute; content:'Next'; display: block; right:16px; top:-30px; opacity: 0; width:0px; white-space: nowrap; overflow: hidden; font-family: 'Playfair Display', serif; font-style: italic; font-size: 17px; -webkit-transition: all 0.5s cubic-bezier(0.77, 0, 0.2, 1); -moz-transition: all 0.5s cubic-bezier(0.77, 0, 0.2, 1); transition: all 0.5s cubic-bezier(0.77, 0, 0.2, 1); }
+		.features .slick-arrow.slick-prev span:before{ left:16px; right: auto; content:'Previous'; }
+		/* to previous */
+		.features .slick-arrow:hover span:before{ right:22px; width: 40px; opacity: 1; -webkit-transition-delay: 0.4s; transition-delay: 0.4s; }
+		.features .slick-arrow.slick-prev:hover span:before{ left:22px; width: 70px; }
+	}
+	@media only screen and (max-width: 1024px){
+		.features .slick-slider .slick-slide:before{ filter: blur(0); display: none !important; }
+	}
+	/* Description to features */
+	.features .features-description{ margin-top:180px;  }

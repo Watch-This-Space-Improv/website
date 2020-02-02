@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "LemonMilk";
+  src: url("/fonts/LemonMilk.otf");
+}
+
+.lemonmilk {
+  font-family: 'LemonMilk', Arial, sans-serif !important;
+}
+
+@font-face {
+  font-family: "TrashHand";
+  src: url("/fonts/TrashHand.TTF");
+}
+
+.trashhand {
+  font-family: 'TrashHand', Arial, sans-serif !important;
+}
+
+:root {
+  --ligh-bg-color-red: #b91701;
+  --dark-bg-color-red: #7A1102;
+  --ligh-bg-color-yellow: #fefec6;
+  --dark-bg-color-yellow: #A09F7D;
+}
+
+
+
+
+.bg-soft-gradient-red:before{
+  opacity: 0.80;
+  background: var(--dark-bg-color-red); /* Old browsers */
+  background: -moz-linear-gradient(45deg,  var(--dark-bg-color-red) 0%, var(--ligh-bg-color-red) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, var(--dark-bg-color-red) 0%,var(--ligh-bg-color-red) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg,  var(--dark-bg-color-red) 0%,var(--ligh-bg-color-red) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.bg-soft-gradient-yellow:before{
+  opacity: 0.80;
+  background: var(--dark-bg-color-yellow); /* Old browsers */
+  background: -moz-linear-gradient(45deg,  var(--dark-bg-color-yellow) 0%, var(--ligh-bg-color-yellow) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, var(--dark-bg-color-yellow) 0%,var(--ligh-bg-color-yellow) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg,  var(--dark-bg-color-yellow) 0%,var(--ligh-bg-color-yellow) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
