@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://watch-this-space.netlify.com/"
 languageCode = "en-us"
 title = "Watch This Space Improv"
 theme = "quadra"
