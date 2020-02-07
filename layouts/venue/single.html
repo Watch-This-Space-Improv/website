@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+{{partial "shared/head.html" .}}
+
+
+
+<!-- BODY START -->
+<body>
+
+
+
+{{partial "home/loader.html" .}}
+    
+{{partial "shared/nav.html" .}}
+
+
+
+    <!-- Page Title -->
+    <section id="home" class="fullscreen white fullwidth">
+        <!-- Parallax Background -->
+        <div class="bg-parallax skrollr" data-anchor-target="#home" data-0="transform:translate3d(0, 0px, 0px);" data-900="transform:translate3d(0px, 200px, 0px);" data-background="{{.Params.image | absURL}}"></div>
+        <!-- Container -->
+        <div class="container relative v-center">
+           <div class="t-center skrollr" data-0="opacity:1;" data-400="opacity:0;">
+                <!-- Play Icon -->
+                <h1 class="bold-title lh-sm xxs-mt animated" data-animation="fadeInUp" data-animation-delay="400">
+                    {{.Title}}
+                </h1>
+           </div>
+        </div>
+        <!-- End Container -->
+    </section>
+    <!-- End Page Title -->
+
+
+
+    <!-- Page Note -->
+    <div class="t-center xxs-px xs-py white" data-bgcolor="#2a2928">
+        <h4 class="bold-subtitle">
+            {{.Params.subtitle}}</span>
+        </h4>
+    </div>
+    <!-- End Page Note -->
+
+
+    <!-- Post -->
+    <section class="py gray7 lh-lg">
+
+
+        <!-- Text Block -->
+        <div class="container-sm">
+            {{ .Content }} 
+        </div>
+        <!-- End Text Block -->
+    </section>
+
+    <!-- jQuery -->
+    <script src="/js/jquery.min.js"></script>
+    <!-- MAIN SCRIPTS - Classic scripts for all theme -->
+    <script src="/js/scripts.js"></script>
+    <!-- PAGE OPTIONS - You can find special scripts for this version -->
+    <script src="/showcase/js/plugins.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.min.js"></script>
+
+
+
+</body>
+<!-- Body End -->
+</html>

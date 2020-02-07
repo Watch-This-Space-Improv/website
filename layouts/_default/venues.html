@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+{{partial "shared/head.html" .}}
+
+
+
+<!-- BODY START -->
+<body>
+
+
+
+{{partial "home/loader.html" .}}
+    
+{{partial "shared/nav.html" .}}
+
+
+    <!-- CONTENT -->
+    <section id="home" class="sm-py bg-gray1 bb-1 border-gray1 fullwidth">
+        <!-- Container -->
+        <div class="container">
+            <div class="row calculate-height">
+               <div class="t-left t-center-xs col-sm-6 col-xs-12">
+                   <h2 class="normal-subtitle">Venues</h2>
+                   <h5 class="gray7">The venues where you can see Watch This Space events</h5>
+               </div>
+           </div>
+        </div>
+        <!-- End Container -->
+    </section>
+    <!-- END CONTENT -->
+
+
+    <!-- BLOG -->
+    <section id="blog" class="qdr-blog post-radius gray6 post-shadow lh-lg py bg-gray2">
+
+        <!-- Container for posts -->
+        <div class="container">
+            <!-- Blog Posts -->
+            <div id="posts" class="cbp">
+              {{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "venue") }}
+              {{ range $paginator.Pages }}
+                <!-- Post -->
+                <a href="{{ .Permalink }}" class="cbp-item art music">
+                  {{if .Params.tags }}{{ range $index, $tag := .Params.tags }}
+                  <div class="basic-mark to-left bold uppercase font-10 radius-lg bg-info white">{{$tag}}</div>
+                   {{end}} </span>
+                  {{ end }}
+
+                    <!-- Image -->
+                    <div>
+                        <img src="{{.Params.image | absURL}}" alt="">
+                    </div>
+                    <!-- Post Texts -->
+                    <div class="xs-px xs-py xs-px-mobile bg-white bs-sm">
+                        <!-- Title -->
+                        <h4 class="bold-subtitle dark">{{.Params.title}}</h4>
+                        <!-- Post Message -->
+                        <p class="xxs-mt">
+                            {{ .Summary | plainify | safeHTML }}
+                        </p>
+                    </div>
+                </a>
+                <!-- End Post -->
+
+              {{ end }}
+
+
+
+            </div>
+            <!-- End Blog Posts -->
+        </div>
+        <!-- End Container for posts -->
+
+    </section>
+    <!-- END BLOG -->
+
+
+
+
+    <!-- jQuery -->
+    <script src="/js/jquery.min.js"></script>
+    <!-- MAIN SCRIPTS - Classic scripts for all theme -->
+    <script src="/js/scripts.js"></script>
+    <!-- PAGE OPTIONS - You can find special scripts for this version -->
+    <script src="/showcase/js/plugins.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.min.js"></script>
+
+    <script type="text/javascript">
+        (function($, window, document, undefined) {
+            'use strict';
+
+            // init cubeportfolio
+            $('#posts').cubeportfolio({
+                filters: '#tags',
+                search: '#blog-search',
+                gapHorizontal: 50,
+                layoutMode: 'grid',
+                gapVertical: 20,
+                gridAdjustment: 'responsive',
+                mediaQueries: [{
+                    width: 1050,
+                    cols: 2,
+                }, {
+                    width: 950,
+                    cols: 2,
+                }, {
+                    width: 850,
+                    cols: 2,
+                }, {
+                    width: 770,
+                    cols: 2,
+                }, {
+                    width: 640,
+                    cols: 2,
+                }, {
+                    width: 480,
+                    cols: 1,
+                }, {
+                    width: 320,
+                    cols: 1
+                }],
+                caption: 'none',
+                animationType: 'quicksand',
+                displayType: 'bottomToTop',
+                displayTypeSpeed: 60,
+            });
+        })(jQuery, window, document);
+    </script>
+
+</body>
+<!-- Body End -->
+</html>

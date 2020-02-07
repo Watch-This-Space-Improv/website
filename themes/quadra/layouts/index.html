@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
-{{partial "shared/head.html"}}
+{{partial "shared/head.html" .}}
 
 <!-- BODY START -->
 <body>
 
-{{partial "home/loader.html"}}
+{{partial "home/loader.html" .}}
 
-{{partial "shared/nav.html"}}
+{{partial "shared/nav.html" .}}
 
     <!-- SECTION - you can add t-center class for centered texts and t-right for aligned right. -->
     <section id="home" class="section">
@@ -35,26 +35,26 @@
             <div class="row">
                 <div class="col-md-6 col-sm-12 left-content bg-soft bg-soft-gradient-red bg-cover skrollr bg-repeat" data-0="background-position:-1050px 0%;" data-end="background-position:0 0%;" data-background="/images/zangamanga.jpg">
                     <div class="section-texts col-md-6">
-                        <a href="#section3" class="text-link">
                             <!-- Texts -->
                             <h3 class="subtitle playfair italic trashhand">Improv JAM & a Show</h3><br>
                             <h1 class="title lemonmilk">JAM</h1><br>
-                        </a>
-                                                    <p>12/06/2019</p>
+                        <p><b>Every Thursday</b></p>
                             <p style="width:100%">The first half is always an improv jam, 
                             where we encourage people to join us on stage 
                         to try out funny improvised comedy games - but don't worry, there's no pressure, you can also come to watch everyone else be funny!</p>
-
+                        <br/>
+                        <div id="next-jam-container"></div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 left-content bg-soft bg-soft-gradient-red bg-cover skrollr bg-repeat" data-0="background-position:-1050px 0%;" data-end="background-position:0 0%;" data-background="/images/showcase.jpg">
                     <div class="section-texts  col-md-6">
-                        <a href="#section3" class="text-link">
                             <!-- Texts -->
                             <h3 class="subtitle playfair italic trashhand">our favorite Barcelona based improv in english</h3><br>
                             <h1 class="title lemonmilk">SHOWCASE</h1><br>
-                            <p>12/06/2019</p>
                         </a>
+                        <br/>
+                        <div id="next-sc-container"></div>
+
                     </div>
                 </div>
             </div>
@@ -69,7 +69,7 @@
             <!-- Row for cols -->
             <div class="row">
                 <!-- Left Large Content -->
-                <div class="col-md-8 col-sm-12 left-content bg-soft bg-soft-gradient-red bg-cover skrollr bg-repeat" data-0="background-position:-1050px 0%;" data-end="background-position:0 0%;" data-background="/images/zangamanga.jpg">
+                <div class="col-md-8 col-sm-12 left-content bg-soft bg-soft-gradient-yellow bg-cover skrollr bg-repeat" data-0="background-position:-1050px 0%;" data-end="background-position:0 0%;" data-background="/images/zangamanga.jpg">
                     <div class="section-texts">
                         <a href="#section3" class="text-link">
                             <!-- Texts -->
@@ -118,8 +118,25 @@
 
 
 
-
-
+    <!-- Quick Contact Form -->
+    <div class="quick-contact-form border-colored">
+        <h5 class="uppercase t-center extrabold">Drop us a message</h5>
+        <p class="t-center normal">You're in the right place! Just drop us a message. How can we help?</p>
+        <!-- Contact Form -->
+        <form class="quick_form" name="quick_form" method="post" action="" netlify>
+            <!-- Name -->
+            <input type="text" name="qname" id="qname" required placeholder="Name" class="no-mt">
+            <!-- Email -->
+            <input type="email" name="qemail" id="qemail" required placeholder="E-Mail">
+            <!-- Message -->
+            <textarea name="qmessage" id="qmessage" required placeholder="Message"></textarea>
+            <!-- Send Button -->
+            <button type="submit" id="qsubmit" class="bg-colored white qdr-hover-6 extrabold">SEND</button>
+            <!-- End Send Button -->
+        </form>
+    </div>
+    <!-- Contact us button -->
+    <a href="#" class="drop-msg click-effect dark-effect"><i class="fa fa-envelope-o"></i></a>
 
 
 
@@ -130,6 +147,9 @@
     <script src="/js/scripts.js"></script>
     <!-- PAGE OPTIONS - You can find special scripts for this version -->
     <script src="/showcase/js/plugins.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.min.js"></script>
+    <script src="/js/wts.js"></script>
     <!-- End JS Files -->
 
 
